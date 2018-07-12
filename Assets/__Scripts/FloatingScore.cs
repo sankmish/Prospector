@@ -24,7 +24,7 @@ public class FloatingScore : MonoBehaviour {
 		}
 		set {
 			_score = value;
-			scoreString = _score.ToString ("NO");
+			scoreString = _score.ToString ("N0");
 			GetComponent<Text> ().text = scoreString;
 		}
 	}
@@ -80,8 +80,6 @@ public class FloatingScore : MonoBehaviour {
 				} else {
 					state = eFSState.idle;
 				}
-
-
 			} else {
 				state = eFSState.active;
 				txt.enabled = true;

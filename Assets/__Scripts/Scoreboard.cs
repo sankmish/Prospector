@@ -21,7 +21,7 @@ public class Scoreboard : MonoBehaviour {
 		}
 		set {
 			_score = value;
-			scoreString = _score.ToString ("NO");
+			scoreString = _score.ToString ("N0");
 		}
 	}
 
@@ -43,7 +43,7 @@ public class Scoreboard : MonoBehaviour {
 		canvasTrans = transform.parent;
 	}
 	
-	public void FSCallBack (FloatingScore fs){
+	public void FSCallback (FloatingScore fs){
 		score += fs.score;
 	}
 
