@@ -215,35 +215,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3b8fdcdb28a8f9a4a8d1641e02e070a9, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &207521060
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 90160440}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 207521061}
-  m_Layer: 0
-  m_Name: Missing Prefab
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &207521061
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 90160440}
-  m_GameObject: {fileID: 207521060}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 772494832}
-  m_Father: {fileID: 2116332001}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &344145107
 GameObject:
   m_ObjectHideFlags: 0
@@ -306,25 +277,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!224 &772494832
+--- !u!224 &772494832 stripped
 RectTransform:
-  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 224362545204025430, guid: 3b8fdcdb28a8f9a4a8d1641e02e070a9,
     type: 2}
   m_PrefabInternal: {fileID: 90160440}
-  m_GameObject: {fileID: 2002496951}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 207521061}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &827460508
 GameObject:
   m_ObjectHideFlags: 0
@@ -337,10 +294,8 @@ GameObject:
   - component: {fileID: 827460511}
   - component: {fileID: 827460510}
   - component: {fileID: 827460509}
-  - component: {fileID: 827460515}
-  - component: {fileID: 827460514}
   - component: {fileID: 827460516}
-  - component: {fileID: 827460517}
+  - component: {fileID: 827460514}
   m_Layer: 0
   m_Name: _MainCamera
   m_TagString: MainCamera
@@ -476,38 +431,6 @@ MonoBehaviour:
   decorators: []
   cardDefs: []
   deckAnchor: {fileID: 0}
---- !u!114 &827460515
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 827460508}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a7d7d9d9d58522f4cb96693ace07ad24, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  deckXML: {fileID: 4900000, guid: c76312a0fb08948699e1abf935e4a957, type: 3}
-  layoutXML: {fileID: 4900000, guid: 61f3f05951a2f4d98b35bddbc7549908, type: 3}
-  xOffset: 3
-  yOffset: -2.5
-  layoutCenter: {x: 0, y: 0, z: 0}
-  fsPosMid: {x: 0.5, y: 0.9}
-  fsPosRun: {x: 0.5, y: 0.75}
-  fsPosMid2: {x: 0.4, y: 1}
-  fsPosEnd: {x: 0.5, y: 0.95}
-  reloadDelay: 2
-  gameOverText: {fileID: 0}
-  roundResultText: {fileID: 0}
-  highScoreText: {fileID: 0}
-  deck: {fileID: 0}
-  layout: {fileID: 0}
-  drawPile: []
-  layoutAnchor: {fileID: 0}
-  target: {fileID: 0}
-  tableau: []
-  discardPile: []
-  fsRun: {fileID: 0}
 --- !u!114 &827460516
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -516,54 +439,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 827460508}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 629f03fef69309249af37756e986b6bf, type: 3}
+  m_Script: {fileID: 11500000, guid: 92dd9bd1aabe631438a7593e6c251f0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  xmlr:
-    xmlText: 
-  multiplier: {x: 0, y: 0}
-  slotDefs: []
-  drawPile:
-    x: 0
-    y: 0
-    faceUp: 0
-    layerName: Default
-    layerID: 0
-    id: 0
-    hiddenBy: 
-    type: slot
-    stagger: {x: 0, y: 0, z: 0}
-  discardPile:
-    x: 0
-    y: 0
-    faceUp: 0
-    layerName: Default
-    layerID: 0
-    id: 0
-    hiddenBy: 
-    type: slot
-    stagger: {x: 0, y: 0, z: 0}
-  sortingLayerNames:
-  - Row0
-  - Row1
-  - Row2
-  - Row3
-  - Discard
-  - Draw
---- !u!114 &827460517
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 827460508}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 55f21c4808c850c41a23777e5b020969, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  chain: 0
-  scoreRun: 0
-  score: 0
+  deckXML: {fileID: 4900000, guid: c76312a0fb08948699e1abf935e4a957, type: 3}
+  layoutXML: {fileID: 0}
+  layoutCenter: {x: 0, y: 0, z: 0}
+  deck: {fileID: 0}
+  drawPile: []
+  discardPile: []
 --- !u!1 &1313191773
 GameObject:
   m_ObjectHideFlags: 0
@@ -798,7 +682,7 @@ GameObject:
   - component: {fileID: 1828356781}
   - component: {fileID: 1828356780}
   m_Layer: 0
-  m_Name: Directional light
+  m_Name: Directional Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -951,21 +835,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &2002496951
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 90160440}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 772494832}
-  m_Layer: 0
-  m_Name: Missing Prefab (Dummy)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!1 &2116331997
 GameObject:
   m_ObjectHideFlags: 0
@@ -1051,7 +920,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
-  - {fileID: 207521061}
+  - {fileID: 772494832}
   - {fileID: 1313191774}
   - {fileID: 1730429852}
   - {fileID: 1528785649}
